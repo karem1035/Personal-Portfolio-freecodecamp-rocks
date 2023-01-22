@@ -1,0 +1,273 @@
+/* ////////////////////////////////// */
+
+/* GENERAL STYLES */
+/* ///////////// */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* margin-top: 7rem; */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* HEADER STYLES */
+/* ///////////// */
+
+.header {
+  background-color: #f3de8a;
+  width: 100%;
+  font-size: 2rem;
+  height: 7rem;
+  top: 0;
+  margin-bottom: 7rem;
+  color: #000;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.502);
+}
+
+.nav-list {
+  margin: 0 1rem;
+  list-style: none;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list li {
+  height: 100%;
+  width: calc(100% / 3);
+}
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:link,
+.btn:visited {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #272838;
+  transition: all 0.4s;
+}
+
+.btn:hover,
+.btn:active {
+  color: #fff;
+  background-color: #272838;
+}
+/* WELCOME   STYLES */
+/* ///////////// */
+
+.welcome-section {
+  height: 100vh;
+  color: #fff;
+  background: rgb(39, 40, 56);
+  background: linear-gradient(
+    203deg,
+    rgba(39, 40, 56, 1) 55%,
+    rgba(75, 77, 108, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.job-title {
+  font-size: 2.8rem;
+  font-style: italic;
+  color: #fff;
+}
+
+/* PROJECTS STYLES */
+/* ///////////// */
+
+.projects {
+  padding: 9.6rem;
+  background-color: #b8f3ff;
+  text-align: center;
+}
+
+.projects-header {
+  max-width: 640px;
+  font-size: 4.2rem;
+  display: block;
+  margin: 0 auto 6rem auto;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #000;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project {
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.code {
+  color: #272838;
+  font-size: 2rem;
+  padding: 1rem;
+  transition: 1s;
+  transition: color 0.7s ease-out;
+}
+
+.project:hover .code,
+.project:active .code {
+  color: #f3de8a;
+}
+
+.project-img {
+  height: 40rem;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-desc {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 0.5rem;
+  color: #fff;
+  background-color: #272838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-btn {
+  font-size: 3rem;
+  text-decoration: none;
+  margin: 0 auto;
+  font-weight: 700;
+  color: #272838;
+  background-color: #f3de8a;
+  padding: 1.5rem 4rem;
+}
+
+/* CONTACT STYLES */
+/* ///////////// */
+
+.contact {
+  background-color: #272838;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+
+  border-bottom: 3px solid #f3de8a;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-header p {
+  font-style: italic;
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.contact-link:link,
+.contact-link:visited {
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.contact-link:hover,
+.contact-link:active {
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 80%);
+
+  transform: translateY(-15%);
+}
+
+h3 {
+  font-size: 4rem;
+}
+/* FOOTER STYLES */
+/* ///////////// */
+
+.footer {
+  height: 15vh;
+  background-color: #7e7f9a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-text,
+.footer-link {
+  font-size: 1.8rem;
+  color: #000;
+  text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 0.5rem;
+  }
+  .header {
+    justify-content: center;
+  }
+
+  .nav-list {
+    top: 0;
+    align-items: center;
+    margin: 0 1rem;
+    width: 100%;
+  }
+  section {
+    padding: 0 2rem;
+    padding: 0 2rem;
+  }
+  footer {
+    padding: 0 2rem;
+  }
+}
